@@ -1,11 +1,8 @@
 //react imports
-import React, { Component } from 'react';
+import * as React from 'react';
 
 //react-router imports
-import { BrowserRouter, Route } from 'react-router-dom';
-
-//config imports
-import * as routes from './config/routes.js';
+import { MemoryRouter } from 'react-router-dom';
 
 //google analytics
 import Analytics from 'react-router-ga';
@@ -13,10 +10,10 @@ import Analytics from 'react-router-ga';
 //style imports
 import './style/css/app.min.css';
 
-export default class App extends Component {
+export default class App extends React.Component {
   render() {
     return (
-      <BrowserRouter>
+      <MemoryRouter>
         <Analytics id="" debug>
           <React.Fragment>
             <p>
@@ -24,7 +21,7 @@ export default class App extends Component {
             </p>
           </React.Fragment>
         </Analytics>
-      </BrowserRouter>
+      </MemoryRouter>
     );
   }
 }
