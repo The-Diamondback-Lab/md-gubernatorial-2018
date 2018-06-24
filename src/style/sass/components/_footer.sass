@@ -1,5 +1,7 @@
 /* BEGIN FOOTER.JSX STYLES - FOOTER.SASS
 
+$footer-breaks: (first: 500px)
+
 footer
   +flex(row, center, center)
 
@@ -23,3 +25,15 @@ footer
     size: 1.25em
     weight: 700
   margin: 0
+
+// media queries
+@media all and (max-width: map-get($footer-breaks, first))
+  footer .wrapper
+    flex-direction: column
+    padding: 2em 0
+
+  .addthis_sharing_toolbox
+    margin: 1em 0
+
+  .scroll-to-top
+    order: 3
