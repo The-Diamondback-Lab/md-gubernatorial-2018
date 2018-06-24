@@ -1,0 +1,111 @@
+/* LANDING.JSX STYLES - LANDING.SASS
+
+// landing style variables
+$landing-breaks: (first: 1130px, second: 1020px, third: 560px)
+
+// styles
+#landing, .landing-text
+  +flex(row, center, center)
+
+.subheading, .link-learn-more
+  color: $white
+
+#landing
+  +set-bkg-img("../../assets/img/md-flag-transparent.png", center center, cover)
+
+  background-color: $black
+  font-family: $font-main
+  height: 100vh
+  width: 100%
+
+.landing-text
+  background-color: $dbk-red
+  height: fit-content
+  padding: 2em 0
+  width: 100%
+
+  .wrapper
+    +flex(row, center, space-between)
+
+#dbk-logo-landing
+  width: 12.5%
+
+.text-container
+  +flex(row, center, space-between)
+
+  font-size: 1.375em
+  text-transform: uppercase
+
+.heading
+  +flex(column, flex-start, flex-start)
+
+  font:
+    family: $font-special
+    size: 0.9em
+  margin: 0.5em 0 0 -5em
+
+  span:first-of-type
+    font-weight: 700
+    margin-bottom: 0.125em
+
+  span:last-of-type
+    color: $white
+    font-weight: 400
+    margin-top: 0.125em
+
+.link-learn-more
+  +flex(row, center, center)
+  +hocus
+    .fa-chevron-right
+      font-size: 2.25em
+
+
+  font:
+    size: 1em
+    weight: 600
+  text-transform: uppercase
+
+  .fa-chevron-right
+    font-size: 1.75em
+    margin: 0 0 0 0.5em
+
+// media queries
+@media all and (max-width: map-get($landing-breaks, first))
+  #dbk-logo-landing
+    width: 10%
+
+  .text-container
+    font-size: 1.25em
+
+@media all and (max-width: map-get($landing-breaks, second))
+  .landing-text .wrapper, .text-container
+    +flex(column, center, center)
+
+  #dbk-logo-landing
+    margin-bottom: 0.625em
+
+  .text-container, .heading
+    margin: 0.5em 0
+
+  .heading
+    align-items: flex-start
+    justify-content: center
+    font-size: 0.85em
+
+  .link-learn-more
+    font-size: 0.75em
+    justify-self: flex-end
+
+  .fa-chevron-right
+    display: none
+
+@media all and (max-width: map-get($landing-breaks, third))
+  .landing-text .wrapper
+    align-items: flex-end
+
+  #dbk-logo-landing
+    display: none
+
+  .heading
+    font-size: 0.75em
+    text-align: left

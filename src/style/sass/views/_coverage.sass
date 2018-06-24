@@ -1,0 +1,38 @@
+/* COVERAGE.JSX STYLE - COVERAGE.SASS
+
+$border: 1px solid rgba($black, 0.25)
+
+$coverage-breaks: (first: 1000px)
+
+#coverage
+  +flex(column, center, center)
+
+.coverage-header
+  +flex(row, center, center)
+
+  border-bottom: $border
+  padding: 1.5em 0
+  width: 100%
+
+.coverage-heading
+  font:
+    family: $font-special
+    weight: 400
+  margin-bottom: 0
+
+.coverage-description
+  font:
+    family: $font-main
+    size: 0.9em
+    weight: 300
+  line-height: 1.5em
+  margin-top: 0.25em
+
+// media queries
+@media all and (max-width: map-get($coverage-breaks, first))
+  .coverage-heading
+    font-size: 1.25em
+
+  .coverage-description
+    font-size: 0.775em
+    margin-top: 0.75em

@@ -1,0 +1,123 @@
+/* BEGIN STORY.JSX STYLES - STORY.SASS
+
+$border: 1px solid rgba($black, 0.25)
+
+$story-breaks: (first: 1000px, second: 500px)
+
+.story
+  +flex(row, center, center)
+
+  border:
+    bottom: $border
+  flex-wrap: nowrap
+  margin: 0
+
+.story:nth-of-type(even)
+  flex-direction: row-reverse
+
+.story-text-container, .story-image
+  flex-basis: 50%
+
+.story-text-container
+  padding: 0 5%
+
+.story-date, .story-author, .story-blurb
+  font-family: $font-main
+
+.story-date, .story-author
+  opacity: 0.5
+  margin: 0
+
+.story-title, .story-link
+  font-family: $font-special
+
+.story-date
+  font:
+    size: 0.75em
+    weight: 300
+  margin: 0
+  text-transform: uppercase
+
+.story-title
+  margin: 0.5em 0
+
+.story-author, .story-blurb
+  font-size: 0.85em
+
+.story-author
+  margin: (-0.5em) 0 0 0
+
+.story-blurb
+  font-weight: 300
+  line-height: 1.5em
+  opacity: 0.625
+
+.story-link
+  +set-bkg-color-and-hover($dbk-red)
+  +hocus
+    border-radius: 2em
+
+
+  color: $white
+  float: right
+  font-size: 0.825em
+  margin: 0
+  padding: 1em 2em 0.75em
+
+.story-image
+  border-left: $border
+  max-height: 100%
+  max-width: 50%
+
+// media queries
+@media all and (max-width: map-get($story-breaks, first))
+  $border: 1px solid $black
+
+  .story
+    border:
+      bottom: $border
+      top: $border
+    position: relative
+
+  .story-text-container, .story-image
+    flex-basis: 100%
+
+  .story-text-container
+    padding:
+      bottom: 12.5%
+      top: 12.5%
+    position: relative
+
+  .story-image
+    border-left: none
+    min-height: 100%
+    min-width: 100%
+    object-fit: cover
+    opacity: 0.1
+    position: absolute
+    z-index: -1
+
+@media all and (max-width: map-get($story-breaks, second))
+  .story-text-container
+    +flex(column, center, flex-start)
+
+    padding-bottom: 20%
+
+  .story-date, .story-title, .story-author, .story-blurb
+    align-self: flex-start
+
+  .story-blurb
+    font-size: 0.8em
+
+  .story-link
+    +hocus
+      border-radius: 0
+
+
+    bottom: 0
+    padding:
+      bottom: 1.25em
+      top: 1.5em
+    position: absolute
+    text-align: right
+    width: 100%

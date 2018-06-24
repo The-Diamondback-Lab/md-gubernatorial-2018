@@ -1,13 +1,20 @@
 //react imports
 import * as React from 'react';
 
-//react-router imports
+// react-router
 import { MemoryRouter } from 'react-router-dom';
 
 //google analytics
 import Analytics from 'react-router-ga';
 
-//style imports
+// views
+import Landing from './views/Landing.jsx';
+import Coverage from './views/Coverage.jsx';
+
+// components
+import Footer from './components/Footer.jsx';
+
+//style
 import './style/css/app.min.css';
 
 export default class App extends React.Component {
@@ -16,9 +23,9 @@ export default class App extends React.Component {
       <MemoryRouter>
         <Analytics id="" debug>
           <React.Fragment>
-            <p>
-              To get started, edit <code>src/App.jsx</code> and save to reload.
-            </p>
+            <Landing />
+            <Coverage />
+            <Footer />
           </React.Fragment>
         </Analytics>
       </MemoryRouter>
