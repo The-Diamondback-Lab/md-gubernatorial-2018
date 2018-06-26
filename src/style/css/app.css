@@ -451,9 +451,9 @@ footer {
   .text-container, .heading {
     margin: 0.5em 0; }
   .heading {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -472,8 +472,10 @@ footer {
   #dbk-logo-landing {
     display: none; }
   .heading {
-    font-size: 0.75em;
-    text-align: left; } }
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    font-size: 0.75em; } }
 
 /* ROOT STYLES */
 #root {

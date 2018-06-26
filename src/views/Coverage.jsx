@@ -13,17 +13,16 @@ const Coverage = () => {
       <div className="coverage-header">
         <div className="wrapper">
           <h2 className="coverage-heading">
-            Diamondback Coverage of the Maryland Primary Gubernatorials
+            The Diamondback's Coverage of the Democrats' Race to the Nomination
           </h2>
           <p className="coverage-description">
-            Suspendisse fringilla venenatis ante eu cursus. Phasellus at ex
-            scelerisque, pharetra lorem sed, hendrerit enim. In ullamcorper
-            blandit augue, commodo volutpat massa malesuada in. Phasellus
-            posuere egestas sollicitudin. Nulla vel ipsum sit amet massa ornare
-            dictum vel viverra neque. Proin vitae tellus est. Etiam vitae erat
-            suscipit, efficitur nulla sed, efficitur purus. Suspendisse
-            imperdiet hendrerit ligula, ut posuere orci laoreet sit amet. Proin
-            cursus eleifend lobortis.
+            Eight Democratic hopefuls will be on the ballot this Election Day,
+            vying for their party’s nomination to take on incumbent Republican
+            Gov. Larry Hogan in November. Since campaigning began in earnest
+            last year, four candidates have visited the University of Maryland.
+            Read on for the Diamondback’s coverage of their visits, candidate
+            forums in the region, and their stances on the issues you care
+            about.
           </p>
         </div>
       </div>
