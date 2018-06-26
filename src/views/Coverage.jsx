@@ -17,12 +17,11 @@ const Coverage = () => {
           </h2>
           <p className="coverage-description">
             Eight Democratic hopefuls will be on the ballot this Election Day,
-            vying for their party’s nomination to take on incumbent Republican
-            Gov. Larry Hogan in November. Since campaigning began in earnest
-            last year, four candidates have visited the University of Maryland.
-            Read on for the Diamondback’s coverage of their visits, candidate
-            forums in the region, and their stances on the issues you care
-            about.
+            vying for their party’s nomination to take on Republican incumbent
+            Larry Hogan in November. Since campaigning began in earnest last
+            year, four candidates have visited the University of Maryland. Read
+            on for The Diamondback’s coverage of their visits, candidate forums
+            in the region, and their stances on the issues you care about.
           </p>
         </div>
       </div>
