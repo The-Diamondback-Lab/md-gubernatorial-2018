@@ -31,7 +31,7 @@ export default class Landing extends React.Component {
               />
 
               <h1 className="animated slideInRight heading">
-                <span>The Diamondback's Guide to the Primaries</span>
+                <span>The Diamondback's Guide to the Election</span>
                 <span>Our Highlights of the Gubernatorial Race So Far</span>
               </h1>
             </div>
